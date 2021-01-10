@@ -1,0 +1,13 @@
+<h2 class="text-center my-3 text-capitalize">{{ingredient}}</h2>
+
+
+<div class="container col-12 d-flex  flex-wrap">
+    <div class="card col-md-4" *ngFor="let cocktail of cocktails">
+        <img class="card-img-top" [src]="cocktail.strDrinkThumb" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{cocktail.strDrink}}</h5>
+
+            <a class="btn btn-primary ms-75" routerLink="/cocktail/{{cocktail.idDrink}}">Recipe</a>
+        </div>
+    </div>
+</div>

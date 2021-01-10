@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row text-center">
+
+        <h1>Recommended Cocktail</h1>
+        <h2>{{cocktail.strDrink}}</h2>
+        <div class="col-md-6 mx-auto">
+            <img class="img-fluid" [src]="cocktail.strDrinkThumb" [alt]="cocktail.strDrink">
+        </div>
+        <div class="col-md-12 text-center">
+            <a class="btn btn-primary col-md-6 my-4" routerLink="/cocktail/{{cocktail.idDrink}}">Recipe</a>
+        </div>
+
+    </div>
+</div>

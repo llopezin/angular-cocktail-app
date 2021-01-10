@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+
+        <h1>{{cocktail.strDrink}}</h1>
+        <p class="lead">{{cocktail.strTags}}</p>
+        <div class="col-md-6">
+            <img class="img-fluid" [src]="cocktail.strDrinkThumb" [alt]="cocktail.strDrink">
+        </div>
+
+        <div class="col-md-6">
+            <table>
+                <th>Ingredients</th>
+                <tbody>
+                    <tr *ngFor="let ingredient of ingredients | keyvalue">
+                        <td>{{ingredient.key}}</td>
+                        <td>{{ingredient.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mb-5">
+            <h4>Preparation</h4>
+            <p><span class="lead">Glass: </span>{{cocktail.strGlass}}</p>
+            {{cocktail.strInstructions}}
+        </div>
+    </div>
+</div>
