@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
 import { CocktailComponent } from './components/cocktail/cocktail.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { CocktailComponent } from './components/cocktail/cocktail.component';
     CocktailListComponent,
     CocktailComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, HttpClientModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
   providers: [],
   bootstrap: [AppComponent],
 })

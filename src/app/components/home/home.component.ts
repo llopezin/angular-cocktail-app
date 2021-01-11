@@ -9,7 +9,7 @@ import { CocktailService } from 'src/app/services/cocktail.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  public cocktail: Cocktail;
+  public cocktail: Cocktail = new Cocktail();
 
   constructor(private cocktailService: CocktailService) {}
 
