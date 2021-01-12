@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1610478800990,
+  "timestamp": 1610480279568,
   "index": "/angular-cocktail-app/index.html",
   "assetGroups": [
     {
@@ -46,7 +46,8 @@
     {
       "name": "API",
       "patterns": [
-        "https:\\/\\/www\\.thecocktaildb\\.com\\/api\\/json\\/v1\\/1\\/.*"
+        "https:\\/\\/www\\.thecocktaildb\\.com\\/api\\/json\\/v1\\/1\\/.*",
+        "https:\\/\\/www\\.thecocktaildb\\.com\\/images\\/media"
       ],
       "strategy": "freshness",
       "maxSize": 10,

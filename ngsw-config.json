@@ -35,7 +35,10 @@
   "dataGroups": [
     {
       "name": "API",
-      "urls": ["https://www.thecocktaildb.com/api/json/v1/1/**"],
+      "urls": [
+        "https://www.thecocktaildb.com/api/json/v1/1/**",
+        "https://www.thecocktaildb.com/images/media"
+      ],
       "cacheConfig": {
         "maxSize": 10,
         "maxAge": "1h",
