@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1610475651843,
+  "timestamp": 1610478800990,
   "index": "/angular-cocktail-app/index.html",
   "assetGroups": [
     {
@@ -19,7 +19,11 @@
         "/angular-cocktail-app/runtime-es5.0dae8cbc97194c7caed4.js",
         "/angular-cocktail-app/styles.3ff695c00d717f2d2a11.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.0-beta1\\/dist\\/css\\/bootstrap\\.min\\.css",
+        "https:\\/\\/ajax\\.googleapis\\.com\\/ajax\\/libs\\/jquery\\/3\\.5\\.1\\/jquery\\.min\\.js",
+        "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/bootstrap\\/4\\.5\\.2\\/js\\/bootstrap\\.min\\.js"
+      ]
     },
     {
       "name": "assets",
@@ -38,7 +42,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "API",
+      "patterns": [
+        "https:\\/\\/www\\.thecocktaildb\\.com\\/api\\/json\\/v1\\/1\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/angular-cocktail-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/angular-cocktail-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
