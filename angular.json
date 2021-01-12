@@ -168,8 +168,13 @@
           "configurations": {
             "production": {}
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "dfea-pec5-pwa"
 }
